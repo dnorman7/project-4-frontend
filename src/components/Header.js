@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import Audio from '../components/Audio'
+
 
 const Header = (props) => {
     return (
@@ -7,8 +9,9 @@ const Header = (props) => {
             <nav>
                 <ul className="NavLinks">
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/songs">Song</Link></li>
-
+                    <li><Link to="/songs">Songs</Link></li>
+                    
+                    <Audio />
                 </ul>
             </nav>
             

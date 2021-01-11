@@ -1,0 +1,61 @@
+
+.widget {
+    border-radius: 12px;
+}
+
+h1 {
+    display: inline-flexbox;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  }
+
+li {
+    display: inline-block;
+    align-items: center;
+    margin: 20px;
+}
+
+button {
+    display: inline-block;
+    background-color: #f99225;
+    border-radius: 10px;
+    border: 4px double #000000;
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    width: 70px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left: 5px;
+    justify-content: center;
+    position: relative;
+
+}
+
+body {
+    margin: 0;
+    background-position: center;
+    background-repeat:repeat-y;
+    background-size: cover;
+    position: relative;
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fgetwallpapers.com%2Fwallpaper%2Ffull%2Fc%2F4%2F9%2F1116295-music-notes-background-3840x2160-hd.jpg&f=1&nofb=1');
+    background-repeat: repeat-y;
+    
+    
+  }
+
+  header {
+    grid-area: header;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  
+  }
+
