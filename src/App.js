@@ -1,26 +1,46 @@
 import './App.css';
+
+
+// import Footer from './components/Footer';
+import Header from './components/Header';
+
+
 import HomePage from './pages/HomePage';
 import SongPage from './pages/SongPage';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import {Route, Switch, withRouter} from 'react-router-dom';
+
+import {Route, Switch} from 'react-router-dom';
+
+
+
+
+
+
 
 function App(props) {
+  
 
+return (
 
-  return (
+  <div className="App">
     <div>
+
       <Header />
+
       <Switch>
-        <Route exact path='/' render={(props) =>
-        <HomePage />} />
-        <Route exact path='/songs' render={(props) => 
-        <SongPage
-        />} />
+
+      <Route exact path='/' render={(props) => 
+      <HomePage />} />
+
+      <Route exact path='/songs' render={(props) =>
+      <SongPage />} />
+
       </Switch>
-      <Footer />
-    </div>
-  )
+
+      {/* <Footer /> */}
+
+      </div>
+  </div>
+  );
 }
 
-export default withRouter(App);
+export default App;
