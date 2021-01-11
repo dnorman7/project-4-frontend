@@ -6,6 +6,7 @@ function Aside(props) {
       <aside>
         <h1>Start creating your list below!</h1>
         <Form handleSubmit={props.handleSubmit}/>
+        
       </aside>
       
     );

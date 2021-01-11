@@ -13,4 +13,3 @@ function Main({songs, handleDelete, handleUpdate}) {
 }
 
 export default Main;
-
