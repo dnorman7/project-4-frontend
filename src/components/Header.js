@@ -1,45 +1,19 @@
-
+import React, { Component } from "react"
 import '../App.css'
 
-import Audio from './Audio';
-
-import { Link } from 'react-router-dom';
-
-import Audio from '../components/Audio'
 
 
-const Header = (props) => {
-    return (
-        <div className="Header">
-            <h1> Tune It Up</h1>
-            <nav>
-                <ul className="NavLinks">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/songs">Songs</Link></li>
-                    
-                    <Audio />
-                </ul>
-            </nav>
-            
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMusic } from "@fortawesome/free-solid-svg-icons";
-
-
-const Header = (props) => {
+export default class extends Component {
+  playAudio() {
+    const audioEl = document.getElementsByClassName("audio-element")[0]
+    audioEl.play()
+  }
+  render() {
 
     return (
-        <header className="Header">
-
-            <div className="logo">
-            <Link className="logo" to='/'><FontAwesomeIcon icon={faMusic}/></Link>
-            </div>
-            <div className="audio">
-                
-            <Audio />
-
-            </div>
-        </header>
+      <div>
+        <iframe className="widget" allow="autoplay" width="60%" height="50px" src="https://www.iheart.com/artist/calvin-harris-60352/?embed=true" frameborder="0"></iframe>
+      </div>
     )
+  }
 }
-export default Header;
