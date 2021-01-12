@@ -23,6 +23,11 @@ nav {
   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fak3.picdn.net%2Fshutterstock%2Fvideos%2F727393%2Fthumb%2F1.jpg&f=1&nofb=1');
   border: 5px solid rgb(131, 34, 34);
   border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
 }
 main {
   grid-area: content;
